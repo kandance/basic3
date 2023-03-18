@@ -27,7 +27,7 @@
     <button class="btn btn-info" (click)="hideParagraph()">
       Display Details
     </button>
-    <p>
+    <p *ngIf="paragraph">
       This is not a secret password. And the secret password is definitely not
       tuna.
     </p>
