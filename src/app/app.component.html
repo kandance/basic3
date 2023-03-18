@@ -31,5 +31,10 @@
       This is not a secret password. And the secret password is definitely not
       tuna.
     </p>
+    <div>
+      <p *ngFor="let number of buttonClicks" [ngClass]="{ fifth: number > 4 }">
+        Number of Button Clicks {{ number }}
+      </p>
+    </div>
   </div>
 </div>
