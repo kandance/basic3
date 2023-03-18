@@ -7,9 +7,14 @@ import { Component } from "@angular/core";
 })
 export class AppComponent {
   paragraph: boolean = true;
+  number: number = 0;
+  buttonLog: any[] = [];
 
   hideParagraph() {
     this.paragraph = !this.paragraph;
     console.log(this.paragraph);
+    this.number += 1;
+    this.buttonLog.push(this.number);
+    console.log(this.buttonLog);
   }
 }
