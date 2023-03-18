@@ -32,7 +32,11 @@
       tuna.
     </p>
     <div>
-      <p *ngFor="let number of buttonClicks" [ngClass]="{ fifth: number > 4 }">
+      <p
+        *ngFor="let number of buttonClicks"
+        [ngStyle]="{ 'background-color': number > 4 ? 'blue' : 'transparent' }"
+        [ngClass]="{ fifth: number > 4 }"
+      >
         Number of Button Clicks {{ number }}
       </p>
     </div>
