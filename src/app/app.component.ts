@@ -12,7 +12,8 @@ export class AppComponent {
   hideParagraph() {
     this.paragraph = !this.paragraph;
     console.log(this.paragraph);
-    this.buttonClicks.push(this.buttonClicks.length + 1);
+    // this.buttonClicks.push(this.buttonClicks.length + 1);
     console.log(this.buttonClicks);
+    this.buttonClicks.push(new Date());
   }
 }
